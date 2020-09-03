@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_demon.MainPage">
+
+    <StackLayout HorizontalOptions="Center">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenido a Xamarin.Forms Demo!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="\(^_^)/ App Demo \(^_^)/" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Con Xamarin es posible realizar cambios en caliente, solo debes modificar tu archivo XAML guardarlo y listo. A continuación, un ejemplo basico de una app con xamarin." FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Calculadora de IMC" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,0,30,0"></Label>
+        <Entry Placeholder="Altura [m]" x:Name="txtAltura"></Entry>
+        <Entry Placeholder="Peso [kg]" x:Name="txtPeso"></Entry>
+        <Entry Placeholder="Tu IMC" x:Name="txtResultado"></Entry>
+        <Button Text="Calcular" Clicked="Button_Clicked" />
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Para más Información visita: "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
